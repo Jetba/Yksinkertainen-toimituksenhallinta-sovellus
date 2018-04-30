@@ -61,7 +61,7 @@
         </div>
         <div class="col">
 <h4>Ilmoitetut kelat</h4>
-<form action="kelojenlisays.php" method="post">
+<form action="tilauksenlisays.php" method="post">
 <p>K4: <input class="form-control-sm" type="text" name="K4" value="0" required></p>
 <p>K5: <input class="form-control-sm" type="text" name="K5" value="0" required></p>
 <p>K6: <input class="form-control-sm" type="text" name="K6" value="0" required></p>
@@ -110,7 +110,7 @@ $result = $kysely->fetchAll();
 ?>
       <div class="col">
 <h4>Noudetut kelat</h4>
-<form action="kelojenkorjaus.php" method="post">
+<form action="tilauksenkorjaus.php" method="post">
 <p>K4: <input class="form-control-sm" type="text" name="K4" value="<?php echo $result[0]['K4']; ?>"></p>
 <p>K5: <input class="form-control-sm" type="text" name="K5" value="<?php echo $result[0]['K5']; ?>"></p>
 <p>K6: <input class="form-control-sm" type="text" name="K6" value="<?php echo $result[0]['K6']; ?>"></p>
