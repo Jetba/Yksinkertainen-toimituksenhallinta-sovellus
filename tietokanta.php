@@ -1,6 +1,6 @@
 <?php
 try {
-  $yhteys = new PDO("mysql:host=localhost;dbname=tietokanta", "käyttäjätunnus", "salasana");
+  $yhteys = new PDO("mysql:host=localhost;dbname="tietokanta", "käyttäjätunnus", "salasana");
 } catch (PDOException $e) {
   die("Voi rähmä: " . $e->getMessage());
 }
